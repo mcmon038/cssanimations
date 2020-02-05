@@ -1,0 +1,89 @@
+/* this is where all of your CSS styles go */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.grid_container {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    left: 50%;
+    top: 48%; /* for optical centering */
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+
+.sans {
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 6em;
+    float: left;
+    margin-left: 5px;
+}
+
+
+
+@keyframes s_move {
+0% /*100%*/ {top: 0px; left: 0px} 
+50% {top: 120px; left: 0px}
+100% {top: 0px; left: -160px}
+/*100% {top: 120px; left: 0px}*/
+
+}
+
+.s {
+    position: relative;
+    animation: s_move 2s linear forwards;
+
+}
+
+@keyframes i_move {
+    0% /*100%*/ {bottom: 0px;left: 0px}
+    50% {bottom: 120px; left: 0px}
+    100% {bottom: 0px; left: -80px}
+    /*75% {bottom: 120px; left: 0px}*/
+
+}
+
+.i {
+    position: relative;
+    animation: i_move 2s linear forwards;
+}
+
+@keyframes e_move {
+    0% /*100%*/ {left: 0px }
+    100% {left: -130px}
+
+}
+
+.e {
+    position: relative;
+    animation: e_move 2s linear forwards ;
+}
+
+
+
+@keyframes n_move {
+    0% /*100%*/ {left: 0px }
+    100% {left: -100px}
+}
+
+.n {
+    position: relative;
+    animation: e_move 2s linear forwards;
+}
+
+@keyframes t_move {
+0% /*100%*/ {right: : 0px }
+    100% {right: -30px}
+
+}
+
+.t {
+    position: relative;
+    animation: t_move 2s linear forwards ;
+}
+
+
+
